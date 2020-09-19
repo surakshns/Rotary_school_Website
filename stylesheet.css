@@ -4,7 +4,7 @@ body{
 
 }
 #nav{
-  background: #1B3F8B;
+  background: #002147;
 }
 #title{
   margin-left: 15px;
@@ -14,10 +14,19 @@ body{
   color: white;
 }
 .navbar-toggler {
-  padding: 5px;
+  padding: 4px;
+  border: 3px solid black;
 }
 .navbar-toggler-icon {
-  height: 20px;
+  height: 23px;
+}
+#link{
+  text-align: center;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#link:hover{
+  background-color: rgba(0, 0, 0, 0.1);
 }
 #link::before {
 	content: "";
@@ -32,7 +41,8 @@ body{
   transition: all ease-in-out 900ms;
 }
 #link:hover::before{
-	width: 48px;
+	width: 74%;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 #drop{
   text-align: center;
@@ -41,15 +51,26 @@ body{
   background-color: #000062;
   color: white;
 }
-
-
-@media (min-width: 0px) and (max-width: 998px){
+.headings{
+  text-align: center;
+  margin-top: 50px;
+}
+.parg{
+  font-size: 1.3rem;
+  margin-bottom: 50px;
+}
+.footer{
+  margin-top: 50px;
+  background: #002147;
+  color: white;
+}
+@media (min-width: 0px) and (max-width: 499px){
 #icon{
   margin-top: 0px;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
 }
 #title{
   margin: 0px;
-  font-size: 4.8vw;
+  font-size: 8vw;
 }
