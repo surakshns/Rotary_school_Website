@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Six+Caps&display=swap');
+body{
+
+}
+#nav{
+  background: #1B3F8B;
+}
+#title{
+  margin-left: 15px;
+  font-family: 'Six Caps', sans-serif;
+  margin-top: 0px;
+  font-size: 50px;
+  color: white;
+}
+.navbar-toggler {
+  padding: 5px;
+}
+.navbar-toggler-icon {
+  height: 20px;
+}
+#link::before {
+	content: "";
+	display: block;
+	height: 2px;
+	width: 100%;
+	background-color: #000062;
+	display: fixed;
+	position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 900ms;
+}
+#link:hover::before{
+	width: 48px;
+}
+#drop{
+  text-align: center;
+}
+#drop:hover{
+  background-color: #000062;
+  color: white;
+}
+
+
+@media (min-width: 0px) and (max-width: 998px){
+#icon{
+  margin-top: 0px;
+  width: 50px;
+  height: 50px;
+}
+#title{
+  margin: 0px;
+  font-size: 4.8vw;
+}
