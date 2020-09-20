@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Six+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
+
 body{
 
 }
@@ -15,7 +20,8 @@ body{
 }
 .navbar-toggler {
   padding: 4px;
-  border: 3px solid black;
+  border: 1px solid black !important;
+  background: white;
 }
 .navbar-toggler-icon {
   height: 23px;
@@ -46,6 +52,7 @@ body{
 }
 #drop{
   text-align: center;
+  color: white;
 }
 #drop:hover{
   background-color: #000062;
@@ -54,10 +61,27 @@ body{
 .headings{
   text-align: center;
   margin-top: 50px;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 30px !important;
+  background: #00246c;
+  color: #febd11;
+  padding: 5px;
 }
 .parg{
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   margin-bottom: 50px;
+  font-family: 'Bebas Neue', cursive;
+  font-family: 'Domine', serif;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.pic{
+  padding: 10px;
+}
+.qout{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem !important;
 }
 .footer{
   margin-top: 50px;
@@ -73,4 +97,10 @@ body{
 #title{
   margin: 0px;
   font-size: 8vw;
+}
+.headings{
+  font-size: 1rem;
+}
+.parg{
+  font-size: 0.8rem;
 }
