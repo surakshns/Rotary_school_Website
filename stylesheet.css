@@ -11,6 +11,13 @@ body{
 #nav{
   background: #002147;
 }
+#icon{
+  transition: .8s;
+  z-index: 3;
+}
+#icon:hover{
+	transform: rotate(360deg);
+}
 #title{
   margin-left: 15px;
   font-family: 'Six Caps', sans-serif;
@@ -87,6 +94,75 @@ body{
   margin-top: 50px;
   background: #002147;
   color: white;
+}
+.wig{
+	display: flex;
+	padding: 0;
+}
+.wig li{
+  padding: 10px;
+	list-style: none;
+}
+.wig li a{
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 16px;
+	margin: 0 3px;
+	display: block;
+	border-radius: 50%;
+	position: relative;
+	overflow: hidden;
+	border: 1px black;
+	z-index: 1;
+}
+.wig li a .fa{
+	position: relative;
+	color: 	#C8C8C8;
+	transition: .5s;
+	z-index: 3;
+  font-size: 20px;
+}
+.wig li a:hover .fa{
+	color: #fff;
+	transform: rotateY(360deg);
+	font-size: 30px;
+}
+.wig li:nth-child(2) a:hover .fa{
+  color: #F9F6EF;
+}
+.wig li:nth-child(1) a:hover .fa{
+  color: #1DB954;
+}
+.wig li:nth-child(5) a:hover .fa{
+  color: #4267B2;
+}
+.wig li:nth-child(3) a:hover .fa{
+  color: #FF0000;
+}
+.wig li:nth-child(4) a:hover .fa{
+  color: #C13584;
+}
+.wig li a:before{
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	/* background: #f00; */
+	transition: .5s;
+	z-index: 2;
+}
+h6 .fa{
+  padding: 5px;
+  font-size: 20px;
+  z-index: 3;
+  transition: .5s;
+}
+h6 .fa:hover{
+  	transform: rotateY(360deg);
 }
 @media (min-width: 0px) and (max-width: 499px){
 #icon{
