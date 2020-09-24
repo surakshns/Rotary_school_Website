@@ -4,7 +4,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
-
+@keyframes rot {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
 body{
 
 }
@@ -14,9 +21,10 @@ body{
 #icon{
   transition: .8s;
   z-index: 3;
+  animation: rot 1.5s linear 1;
 }
 #icon:hover{
-	transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 #title{
   margin-left: 15px;
@@ -24,6 +32,9 @@ body{
   margin-top: 0px;
   font-size: 50px;
   color: white;
+}
+#title:hover{
+  color: #febd11;
 }
 .navbar-toggler {
   padding: 4px;
@@ -76,7 +87,7 @@ body{
   padding: 5px;
 }
 .parg{
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin-bottom: 50px;
   font-family: 'Bebas Neue', cursive;
   font-family: 'Domine', serif;
@@ -89,6 +100,9 @@ body{
 .qout{
     font-family: 'Bebas Neue', cursive;
     font-size: 2rem !important;
+}
+.qout:hover{
+  color: #febd11;
 }
 .footer{
   margin-top: 50px;
@@ -162,7 +176,7 @@ h6 .fa{
   transition: .5s;
 }
 h6 .fa:hover{
-  	transform: rotateY(360deg);
+  	transform: rotate(360deg);
 }
 @media (min-width: 0px) and (max-width: 499px){
 #icon{
