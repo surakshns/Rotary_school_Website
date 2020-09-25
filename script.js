@@ -24,7 +24,7 @@
   false);
 });
 })(window);
-  var homeHtml = "home.html"
+  var homHtml = "home.html"
   var comityHtml = "comity.html";
   var eventHtml = "event.html";
   var gallHtml = "gallery.html";
@@ -45,7 +45,7 @@ var showLoading = function (selector) {
 function home(){
 console.log("hey");
 showLoading("#main");
-$ajaxUtils.sendGetRequest(homeHtml,
+$ajaxUtils.sendGetRequest(homHtml,
   function (responseText) {
   document.querySelector("#main")
   .innerHTML = responseText;
