@@ -24,7 +24,6 @@
   false);
 });
 })(window);
-  var homHtml = "home.html"
   var comityHtml = "comity.html";
   var eventHtml = "event.html";
   var gallHtml = "gallery.html";
@@ -40,17 +39,6 @@ var showLoading = function (selector) {
   var html = "<div class='text-center'>";
   html += "<img id='icon' src='images/icon.webp'></div>";
   insertHtml(selector, html);
-};
-
-function home(){
-console.log("hey");
-showLoading("#main");
-$ajaxUtils.sendGetRequest(homHtml,
-  function (responseText) {
-  document.querySelector("#main")
-  .innerHTML = responseText;
-},
-false);
 };
 
 function com(){
