@@ -2,7 +2,6 @@
 (function (global) {
 
   var homeHtml = "home.html";
-  var comityHtml = "comity.html"
 
   var insertHtml = function (selector, html){
     var targetElem = document.querySelector(selector);
@@ -24,6 +23,7 @@
   false);
 });
 })(window);
+  var homHtml = "home.html";
   var comityHtml = "comity.html";
   var eventHtml = "event.html";
   var gallHtml = "gallery.html";
@@ -39,6 +39,17 @@ var showLoading = function (selector) {
   var html = "<div class='text-center'>";
   html += "<img id='icon' src='images/icon.webp'></div>";
   insertHtml(selector, html);
+};
+
+function hom(){
+console.log("hey");
+showLoading("#main");
+$ajaxUtils.sendGetRequest(homHtml,
+  function (responseText) {
+  document.querySelector("#main")
+  .innerHTML = responseText;
+},
+false);
 };
 
 function com(){
