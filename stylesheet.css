@@ -81,6 +81,17 @@ li a:hover{
 }
 .headings{
   text-align: center;
+  margin-top: 50px;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 30px !important;
+  background: #00246c;
+  color: #febd11;
+  padding: 5px;
+}
+.headings1{
+  text-align: center;
+  margin-top: 5px;
   font-family: 'Dancing Script', cursive;
   font-family: 'Berkshire Swash', cursive;
   font-size: 30px !important;
