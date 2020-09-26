@@ -27,8 +27,8 @@
   var comityHtml = "comity.html";
   var eventHtml = "event.html";
   var gallHtml = "gallery.html";
-  var donorHtml = "donor.html";
-  var contact = "contact.html";
+  var donorHtml = "donors.html";
+  var contactHtml = "contact.html";
 
 var insertHtml = function (selector, html){
   var targetElem = document.querySelector(selector);
