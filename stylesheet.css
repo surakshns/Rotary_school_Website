@@ -76,6 +76,9 @@ body{
   background-color: #000062;
   color: white;
 }
+li a:hover{
+  cursor: pointer;
+}
 .headings{
   text-align: center;
   font-family: 'Dancing Script', cursive;
