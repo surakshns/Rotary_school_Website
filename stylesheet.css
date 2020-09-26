@@ -86,6 +86,9 @@ body{
   color: #febd11;
   padding: 5px;
 }
+.line{
+  font-family: 'Dancing Script', cursive;
+}
 .parg{
   font-size: 1.2rem;
   margin-bottom: 50px;
@@ -93,6 +96,9 @@ body{
   font-family: 'Domine', serif;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+.imp{
+  font-family: 'Bebas Neue', cursive;
 }
 .pic{
   padding: 5px;
@@ -177,6 +183,20 @@ h6 .fa{
 }
 h6 .fa:hover{
   	transform: rotate(360deg);
+}
+.contact{
+  font-weight: bold;
+  background: #e6e6e6;
+  color: #B20000;
+  border: solid#B20000;
+  border-radius: 1cm;
+  padding: 10px;
+}
+.contact:hover{
+  text-decoration: none;
+  color: #ff0000;
+  background: #e0e0e0;
+  border: solid#ff0000;
 }
 @media (min-width: 0px) and (max-width: 499px){
 #icon{
