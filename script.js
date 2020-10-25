@@ -190,7 +190,6 @@ false);
 
 var switchMenuToActive = function () {
   // Remove 'active' from home button
-
   console.log("hey");
   var classes = document.querySelector(".active").className;
   classes = classes.replace(new RegExp("active", "g"), "");

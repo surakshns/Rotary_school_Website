@@ -10,7 +10,7 @@ var members=[
   {place:"Members",name:'Rtn II H.R. DAYANADA',image:'images/image1.jpg'},
 ];
 var staff={
-  
+
 }
 
 function incerting(a){
