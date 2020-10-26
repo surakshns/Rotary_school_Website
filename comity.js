@@ -37,9 +37,9 @@ else if (a==members) {
     place.innerHTML=a[index].place;
   });
 };
-function comity() async{
+function comity(){
   com();
-  await incerting(management);
-  await incerting(members);
+ incerting(management);
+ incerting(members);
   console.log("async");
 }
