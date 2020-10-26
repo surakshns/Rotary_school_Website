@@ -87,6 +87,9 @@ $ajaxUtils.sendGetRequest(comityHtml,
   var classes = document.querySelector(".navbar-collapse").className;
   classes = classes.replace(new RegExp("show", "g"), " ");
   document.querySelector(".navbar-collapse").className = classes;
+
+  var card = document.querySelector(".management");
+  var mem = document.querySelector(".members");
 },
 false);
 };
