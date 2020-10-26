@@ -13,14 +13,6 @@ var staff={
 
 }
 
-function comity(){
-  com();
- incerting(management);
- incerting(members);
-  console.log("async");
-}
-
-
 function incerting(a){
 var card = document.querySelector(".management");
 var mem = document.querySelector(".members");
@@ -45,3 +37,5 @@ else if (a==members) {
     place.innerHTML=a[index].place;
   });
 };
+incerting(management);
+incerting(members);
