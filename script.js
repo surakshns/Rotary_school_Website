@@ -68,10 +68,6 @@ false);
 function com(){
 console.log("hey");
 
-var script = document.querySelector(".script");
-script.insertAdjacentHTML('afterend ',"<script type='text/javascript' src='comity.js'></script>");
-console.log(script);
-
 var classe = document.querySelector(".active").className;
 classe = classe.replace(new RegExp("active", "g"), "");
 document.querySelector(".active").className = classe;
@@ -91,6 +87,10 @@ $ajaxUtils.sendGetRequest(comityHtml,
   var classes = document.querySelector(".navbar-collapse").className;
   classes = classes.replace(new RegExp("show", "g"), " ");
   document.querySelector(".navbar-collapse").className = classes;
+
+  var script = document.querySelector(".script");
+  script.insertAdjacentHTML('afterEnd',"<script type='text/javascript' src='comity.js'></script>");
+  console.log(script);
 },
 false);
 };
