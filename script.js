@@ -89,9 +89,6 @@ $ajaxUtils.sendGetRequest(comityHtml,
   document.querySelector(".navbar-collapse").className = classes;
 },
 false);
-var script = document.querySelector(".script");
-script.insertAdjacentHTML('afterEnd',"<script type='text/javascript' src='comity.js'></script>");
-console.log(script);
 };
 
 function eve(){
