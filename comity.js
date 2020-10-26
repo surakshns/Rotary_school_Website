@@ -12,7 +12,7 @@ var members=[
 var staff={
 
 }
-
+document.addEventListener("DOMContentLoaded", function (event) {
 function incerting(a){
 var card = document.querySelector(".management");
 var mem = document.querySelector(".members");
@@ -39,3 +39,4 @@ else if (a==members) {
 };
 incerting(management);
 incerting(members);
+}
