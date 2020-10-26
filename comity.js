@@ -38,7 +38,7 @@ else if (a==members) {
   });
 };
 function comity(){
+  com();
   incerting(management);
   incerting(members);
-  com();
 }
