@@ -69,9 +69,9 @@ function com(){
 console.log("hey");
 
 var script = document.querySelector(".script");
-script.insertAdjacentHTML('afterend ',"<script type='text/javascript' src='comity.js'></script>";
+script.insertAdjacentHTML('afterend ',"<script type='text/javascript' src='comity.js'></script>");
 console.log(script);
- 
+
 var classe = document.querySelector(".active").className;
 classe = classe.replace(new RegExp("active", "g"), "");
 document.querySelector(".active").className = classe;
