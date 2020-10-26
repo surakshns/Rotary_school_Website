@@ -45,6 +45,7 @@ console.log(a);
 var block = "<div class='card'><img class='card-img-top image' src='' alt='Card image cap'><div class='card-body'><h6 class='card-title text-center place'></h6><h5 class='card-title text-center name'></h5></div><div>";
 console.log(block);
 console.log(card);
+console.log(mem);
 if(a==management){
   var ans=card;
 }
