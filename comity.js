@@ -12,10 +12,13 @@ var members=[
 var staff={
 
 }
+document.addEventListener("DOMContentLoaded", function (event) {
+  var card = document.querySelector(".management");
+  var mem = document.querySelector(".members");
+});
 
 function incerting(a){
-var card = document.querySelector(".management");
-var mem = document.querySelector(".members");
+
 console.log(a);
 var block = "<div class='card'><img class='card-img-top image' src='' alt='Card image cap'><div class='card-body'><h6 class='card-title text-center place'></h6><h5 class='card-title text-center name'></h5></div><div>";
 console.log(block);
