@@ -41,4 +41,5 @@ function comity() async{
   com();
   await incerting(management);
   await incerting(members);
+  console.log("async");
 }
