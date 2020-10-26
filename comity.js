@@ -15,6 +15,8 @@ var staff={
 document.addEventListener("DOMContentLoaded", function (event) {
   var card = document.querySelector(".management");
   var mem = document.querySelector(".members");
+  console.log(card);
+  console.log(mem);
 });
 
 function incerting(a){
