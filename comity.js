@@ -37,3 +37,8 @@ else if (a==members) {
     place.innerHTML=a[index].place;
   });
 };
+function comity(){
+  incerting(management);
+  incerting(members);
+  com();
+}
