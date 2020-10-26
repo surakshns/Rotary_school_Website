@@ -13,40 +13,13 @@ var staff={
 
 }
 
-function com(){
-console.log("hey");
-
-var classe = document.querySelector(".active").className;
-classe = classe.replace(new RegExp("active", "g"), "");
-document.querySelector(".active").className = classe;
-
-var name = document.querySelector("#com").className;
-name += " active";
-document.querySelector("#com").className = name;
-
-
-console.log("hey");
-showLoading("#main");
-$ajaxUtils.sendGetRequest(comityHtml,
-  function (responseText) {
-  document.querySelector("#main")
-  .innerHTML = responseText;
-
-  var classes = document.querySelector(".navbar-collapse").className;
-  classes = classes.replace(new RegExp("show", "g"), " ");
-  document.querySelector(".navbar-collapse").className = classes;
-},
-false);
-
-document.addEventListener("DOMContentLoaded", function (event) {
 function incerting(a){
-  var card = document.querySelector(".management");
-  var mem = document.querySelector(".members");
+var card = document.querySelector(".management");
+var mem = document.querySelector(".members");
 console.log(a);
 var block = "<div class='card'><img class='card-img-top image' src='' alt='Card image cap'><div class='card-body'><h6 class='card-title text-center place'></h6><h5 class='card-title text-center name'></h5></div><div>";
 console.log(block);
 console.log(card);
-console.log(mem);
 if(a==management){
   var ans=card;
 }
@@ -66,5 +39,3 @@ else if (a==members) {
 };
 incerting(management);
 incerting(members);
-});
-};
