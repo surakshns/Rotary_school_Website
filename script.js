@@ -87,12 +87,11 @@ $ajaxUtils.sendGetRequest(comityHtml,
   var classes = document.querySelector(".navbar-collapse").className;
   classes = classes.replace(new RegExp("show", "g"), " ");
   document.querySelector(".navbar-collapse").className = classes;
-
-  var script = document.querySelector(".script");
-  script.insertAdjacentHTML('afterEnd',"<script type='text/javascript' src='comity.js'></script>");
-  console.log(script);
 },
 false);
+var script = document.querySelector(".script");
+script.insertAdjacentHTML('afterEnd',"<script type='text/javascript' src='comity.js'></script>");
+console.log(script);
 };
 
 function eve(){
