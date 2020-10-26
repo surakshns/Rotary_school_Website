@@ -38,6 +38,7 @@ $ajaxUtils.sendGetRequest(comityHtml,
 },
 false);
 
+document.addEventListener("DOMContentLoaded", function (event) {
 function incerting(a){
   var card = document.querySelector(".management");
   var mem = document.querySelector(".members");
@@ -63,6 +64,7 @@ else if (a==members) {
     place.innerHTML=a[index].place;
   });
 };
+});
 incerting(management);
 incerting(members);
 };
