@@ -93,7 +93,6 @@ name += " active";
 document.querySelector("#com").className = name;
 
 
-async function ajax(){
 console.log("hey");
 showLoading("#main");
 $ajaxUtils.sendGetRequest(comityHtml,
@@ -107,7 +106,7 @@ $ajaxUtils.sendGetRequest(comityHtml,
 },
 false);
 
-function incerting(a){
+async function incerting(a){
     var card = await document.querySelector(".management");
     var mem = await document.querySelector(".members");
   console.log(a);
@@ -133,8 +132,6 @@ function incerting(a){
   };
 incerting(management);
 incerting(members);
-};
-ajax();
 };
 
 
