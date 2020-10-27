@@ -109,8 +109,8 @@ false);
 };
 
 var promise = myajax();
-document.addEventListener('DOMContentLoaded', function() {
 promise.done(function(data){
+  console.log(data);
   function incerting(a){
     var card = document.querySelector(".management");
     var mem = document.querySelector(".members");
@@ -135,13 +135,11 @@ promise.done(function(data){
       place.innerHTML=a[index].place;
     });
   };
-
 });
-
-})
 incerting(management);
 incerting(members);
 };
+
 
 function eve(){
 console.log("hey");
