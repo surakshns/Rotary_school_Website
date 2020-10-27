@@ -135,12 +135,12 @@ promise.done(function(data){
       place.innerHTML=a[index].place;
     });
   };
-  incerting(management);
-  incerting(members);
+
 });
 
 })
-
+incerting(management);
+incerting(members);
 };
 
 function eve(){
