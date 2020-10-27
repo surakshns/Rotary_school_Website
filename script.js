@@ -65,31 +65,7 @@ $ajaxUtils.sendGetRequest(homHtml,
 false);
 };
 
-function com(){
-console.log("hey");
 
-var classe = document.querySelector(".active").className;
-classe = classe.replace(new RegExp("active", "g"), "");
-document.querySelector(".active").className = classe;
-
-var name = document.querySelector("#com").className;
-name += " active";
-document.querySelector("#com").className = name;
-
-
-console.log("hey");
-showLoading("#main");
-$ajaxUtils.sendGetRequest(comityHtml,
-  function (responseText) {
-  document.querySelector("#main")
-  .innerHTML = responseText;
-
-  var classes = document.querySelector(".navbar-collapse").className;
-  classes = classes.replace(new RegExp("show", "g"), " ");
-  document.querySelector(".navbar-collapse").className = classes;
-},
-false);
-};
 
 function eve(){
 console.log("hey");

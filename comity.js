@@ -12,35 +12,66 @@ var members=[
 var staff={
 
 }
-document.addEventListener("DOMContentLoaded", function (event) {
-  var card = document.querySelector(".management");
-  var mem = document.querySelector(".members");
-  console.log(card);
-  console.log(mem);
-});
 
-function incerting(a){
 
-console.log(a);
-var block = "<div class='card'><img class='card-img-top image' src='' alt='Card image cap'><div class='card-body'><h6 class='card-title text-center place'></h6><h5 class='card-title text-center name'></h5></div><div>";
-console.log(block);
-console.log(card);
-if(a==management){
-  var ans=card;
-}
-else if (a==members) {
-  var ans=mem;
-}
-  a.map(function(item, index, array){
-  ans.insertAdjacentHTML('afterbegin',block);
-    console.log(ans);
-    var image = ans.querySelector(".image");
-    image.src=a[index].image;
-    var name = ans.querySelector(".name");
-    name.innerHTML=a[index].name;
-    var place = ans.querySelector(".place");
-    place.innerHTML=a[index].place;
-  });
+function com(){
+console.log("hey");
+
+var classe = document.querySelector(".active").className;
+classe = classe.replace(new RegExp("active", "g"), "");
+document.querySelector(".active").className = classe;
+
+var name = document.querySelector("#com").className;
+name += " active";
+document.querySelector("#com").className = name;
+
+function myajax(){
+
+console.log("hey");
+showLoading("#main");
+$ajaxUtils.sendGetRequest(comityHtml,
+  function (responseText) {
+  document.querySelector("#main")
+  .innerHTML = responseText;
+
+  var classes = document.querySelector(".navbar-collapse").className;
+  classes = classes.replace(new RegExp("show", "g"), " ");
+  document.querySelector(".navbar-collapse").className = classes;
+},
+false);
 };
-incerting(management);
-incerting(members);
+
+var promise = myajax();
+document.addEventListener('DOMContentLoaded', function() {
+promise.done(function(data){
+  function incerting(a){
+    var card = document.querySelector(".management");
+    var mem = document.querySelector(".members");
+  console.log(a);
+  var block = "<div class='card'><img class='card-img-top image' src='' alt='Card image cap'><div class='card-body'><h6 class='card-title text-center place'></h6><h5 class='card-title text-center name'></h5></div><div>";
+  console.log(block);
+  console.log(card);
+  if(a==management){
+    var ans=card;
+  }
+  else if (a==members) {
+    var ans=mem;
+  }
+    a.map(function(item, index, array){
+    ans.insertAdjacentHTML('afterbegin',block);
+      console.log(ans);
+      var image = ans.querySelector(".image");
+      image.src=a[index].image;
+      var name = ans.querySelector(".name");
+      name.innerHTML=a[index].name;
+      var place = ans.querySelector(".place");
+      place.innerHTML=a[index].place;
+    });
+  };
+  incerting(management);
+  incerting(members);
+}
+
+})
+
+};
