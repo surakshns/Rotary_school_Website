@@ -92,7 +92,7 @@ var name = document.querySelector("#com").className;
 name += " active";
 document.querySelector("#com").className = name;
 
-function myajax(){
+
 
 console.log("hey");
 showLoading("#main");
@@ -108,8 +108,7 @@ $ajaxUtils.sendGetRequest(comityHtml,
 false);
 };
 
-var promise = myajax();
-promise.done(function incerting(a){
+function incerting(a){
     var card = document.querySelector(".management");
     var mem = document.querySelector(".members");
   console.log(a);
@@ -132,7 +131,7 @@ promise.done(function incerting(a){
       var place = ans.querySelector(".place");
       place.innerHTML=a[index].place;
     });
-  });
+  };
 incerting(management);
 incerting(members);
 };
