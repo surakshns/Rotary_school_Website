@@ -108,19 +108,20 @@ false);
 
 async function incerting(a){
     var card = await document.querySelector(".management");
+    console.log(card);
     var mem = await document.querySelector(".members");
+    console.log(block);
   console.log(a);
   var block = "<div class='card'><img class='card-img-top image' src='' alt='Card image cap'><div class='card-body'><h6 class='card-title text-center place'></h6><h5 class='card-title text-center name'></h5></div><div>";
-  console.log(block);
-  console.log(card);
+
   if(a==management){
-    var ans=card;
+    var ans= await card;
   }
   else if (a==members) {
-    var ans=mem;
+    var ans= await mem;
   }
     a.map(function(item, index, array){
-    ans.insertAdjacentHTML('afterbegin',block);
+    await ans.insertAdjacentHTML('afterbegin',block);
       console.log(ans);
       var image = ans.querySelector(".image");
       image.src=a[index].image;
