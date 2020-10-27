@@ -120,7 +120,7 @@ async function incerting(a){
   else if (a==members) {
     var ans= await mem;
   }
-    a.map(function(item, index, array){
+    a.map(async function(item, index, array){
     await ans.insertAdjacentHTML('afterbegin',block);
       console.log(ans);
       var image = ans.querySelector(".image");
