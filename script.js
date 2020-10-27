@@ -106,7 +106,6 @@ $ajaxUtils.sendGetRequest(comityHtml,
   document.querySelector(".navbar-collapse").className = classes;
 },
 false);
-};
 
 function incerting(a){
     var card = document.querySelector(".management");
